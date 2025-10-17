@@ -13,7 +13,7 @@ services:
       - ./.srv/database:/var/lib/mysql
 
   wordpress:
-    image: wordpress:latest
+    build: .
     restart: always
     environment:
       WORDPRESS_DB_HOST: mysql:3306
