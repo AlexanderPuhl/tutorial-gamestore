@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/blocks-gamestore",
+  "name": "blocks-gamestore/block-hero",
   "version": "0.1.0",
-  "title": "Blocks Gamestore",
+  "title": "Hero Block",
   "category": "widgets",
   "icon": "smiley",
   "description": "Example block scaffolded with Create Block tool.",
