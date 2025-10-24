@@ -54,7 +54,7 @@ jobs:
             find "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}" -type f -name "*.php ! -name "wp-config.php" -delete
             rm -rf "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/wp-admin" "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/wp-includes/"
             unzip -o "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com/wordpress.zip' }}/wordpress.zip" -d "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}"/
-            mv "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/wordpress/*" "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/"
+            mv "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/wordpress"/* "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/"
             rm -r "${{ github.event_name == 'push' && 'public_html/dev.geniuscourses.com' || 'public_html/live.geniuscourses.com' }}/wordpress/"
 
       - name: Update Plugins and Theme
