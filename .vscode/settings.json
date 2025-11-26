@@ -1,0 +1,54 @@
+{
+  // --- FORMATTERS ---
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  // --- LINTING ---
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // --- INTELEPHENSE / PHP ---
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.environment.phpVersion": "8.1", // UPDATE THIS to match your server version
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.ds_store/**",
+    "**/node_modules/**",
+    "**/vendor/**/{Tests,tests}/**",
+    "**/.srv/database/**"
+  ],
+  "intelephense.format.braces": "k&r",
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "Core",
+    "curl",
+    "date",
+    "dom",
+    "fileinfo",
+    "filter",
+    "gd",
+    "json",
+    "mbstring",
+    "mysqli",
+    "openssl",
+    "pcre",
+    "PDO",
+    "readline",
+    "session",
+    "SimpleXML",
+    "sodium",
+    "standard",
+    "superglobals",
+    "xml",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+
+  // --- GIT ---
+  "git.ignoreLimitWarning": true
+}
